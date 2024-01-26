@@ -12,6 +12,7 @@ export const Hero = styled.section`
     
 `
 export const Banner = styled.div`
+    
     width: 100%;
     height: 400px;
     display: flex;
@@ -19,11 +20,18 @@ export const Banner = styled.div`
     justify-content: center;
     z-index: 0;
     position: relative;
-
     img {
         z-index: 1;
         width: 100%;
         height: 80%;
+    }
+    @media screen and (max-width: 290px) {
+        width: 100%;
+        text-align: center;
+        h3 {
+            font-size: 2.5rem;
+
+        }
     }
     @media screen and (min-width: 500px) {
         img:nth-child(1) {
@@ -43,7 +51,7 @@ export const Banner = styled.div`
 `
 //Article
 export const Titles = styled.div`
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: left;
     margin-top: -7rem;
@@ -57,14 +65,7 @@ export const Titles = styled.div`
         font-size: 2.5rem;
         margin-top: -2.5rem;
     }
-    @media screen and (max-width: 290px) {
-        width: 100%;
-        text-align: center;
-        h3 {
-            font-size: 2.5rem;
-
-        }
-    }
+  
     @media screen and (min-width: 500px) {
         text-align: center;
         margin-top: .2rem;
