@@ -3,18 +3,13 @@ import styled from "styled-components";
 export const Hero = styled.section`
     display: flex;
     flex-direction: column;
- 
-    @media screen and (min-width: 700px) {
-        flex-direction: row-reverse;
-        align-items: center;
+    align-items: center;
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
     }
-
-    
 `
 export const Banner = styled.div`
-    
     width: 100%;
-    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,8 +17,28 @@ export const Banner = styled.div`
     position: relative;
     img {
         z-index: 1;
-        width: 100%;
+        width: 60%;
         height: 80%;
+    }
+    img:nth-child(2), img:nth-child(3), img:nth-child(4) {
+        position: absolute;
+    }
+    img:nth-child(2) {
+        height: 13.5rem;
+        width: 13.5rem;
+        right: 1rem;
+        bottom: 0;
+    }
+    img:nth-child(3) {
+        top: 1rem;
+        right: -4rem;
+        z-index: 0;
+    }
+    img:nth-child(4) {
+        right: 12rem;
+        bottom: -1rem;
+        height: 8rem;
+        width: 8rem;
     }
     @media screen and (max-width: 290px) {
         width: 100%;
@@ -41,77 +56,55 @@ export const Banner = styled.div`
         }
     }
     @media screen and (min-width: 700px) {
-        width: 40%;
-        margin: 1.5rem;
+        width: 100%;
+        img:nth-child(2) {
+        height: 20rem;
+        width: 20rem;
+        right: 0;
+        }
+        img:nth-child(4) {
+            right: 12rem;
+            height: 20rem;
+            width: 20rem;
+        }
     }
     @media screen and (min-width: 1000px) {
-        margin-left: 0;
-        margin-right: 2rem;
+        width: 50%;
+
+        img:nth-child(2), img:nth-child(3), img:nth-child(4) {
+            left: 0;
+        }
+        img:nth-child(4) {
+            height: 20rem;
+            width: 20rem;
+            left: 10rem;
+        }
     }
 `
 //Article
-export const Titles = styled.div`
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-    margin-top: -7rem;
-    h2 {
-        font-family: 'Pacifico', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
-        font-size: 6rem;
-        color: #FBAABB;
-    }
-    h3 {
-        color: #9ca3af;
-        font-size: 2.5rem;
-        margin-top: -2.5rem;
-    }
-  
-    @media screen and (min-width: 500px) {
-        text-align: center;
-        margin-top: .2rem;
-        h2 {
-            font-size: 7rem;
-        }
-        h3 {
-            font-size: 3rem;
-        }
-    }
-    @media screen and (min-width: 700px) {
-        margin-top: 7rem;
-        flex-direction: row-reverse;
-        align-items: center;
-        h2 {
-            font-size: 8rem;
-        }
-        h3 {
-            font-size: 2.5rem;
-        }
-    }
-    @media screen and (min-width: 1000px) {
-        width: 90%;
-        text-align: left;
-    }
-
-`
-
-
 export const SectionArticle = styled.div`
-    margin: 1rem auto;
-    width: 80%;
+    margin: 3rem auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     z-index: 1;
 
+
     article {
-        width: 90%;
-        margin: 1.8rem auto;
+        width: 95%;
+        margin: 0 auto;
     }
     p {
         color: #94a3b8;
         font-size: 2rem;
         letter-spacing: .1rem;
-        line-height: 3rem;
+        line-height: 3.9rem;
         text-align: center;
+    }
+    .distak span:nth-child(1){
+        font-family: 'Pacifico', cursive, Arial, Helvetica, sans-serif;
+        color: #FBAABB;
+        font-size: 3rem;
     }
 
     @media screen and (min-width: 500px) {
@@ -125,24 +118,27 @@ export const SectionArticle = styled.div`
         
     }
     @media screen and (min-width: 700px) {
-        width: 50%;
-        margin-right: 1rem;
-
-        article p {
-            font-size: 1.8rem;
-            width: 90%;
-            line-height: 3rem;
+        width: 600px;
+        margin: 3rem auto;
+        article {
+            width: 100%;
         }
+        article strong span{
+            color: red;
+        }
+  
+
     }
     @media screen and (min-width: 1000px) {
-        width: 700px;
-        margin-right: 0;
+        width: 50%;
+        margin-top: 20rem;
         article {
             margin: 1rem auto;
             width: 90%;
             
         }
         p {
+            font-size: 2rem;
             text-align: left;   
         }
     }

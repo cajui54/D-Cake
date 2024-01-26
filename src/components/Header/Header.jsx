@@ -9,9 +9,8 @@ const Header = () => {
     <Style.Header>
 
         <Style.Logo>
-            <a href='google' target='_blank'>
-                <img src={imgLogo} alt="logo de bolo" />
-            </a>
+          <h2>DCakes</h2>
+          <h3>Confeitária Artesanal</h3>
         </Style.Logo>
 
         <ButtonBuger/>

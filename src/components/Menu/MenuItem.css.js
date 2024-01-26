@@ -24,7 +24,7 @@ export const Menu = styled.nav`
         color: #FBAABB;
         font-size: 1.5rem;
         font-weight: bold;
-        font-family: 'Pacifico', cursive;
+        font-family: 'Roboto', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
     }
     img {
         width: 10rem;
@@ -47,6 +47,7 @@ export const Menu = styled.nav`
     a:hover img {
         transform: scale(1.3);
     }
+
     @media screen and (max-width: 290px) {
         overflow-x: scroll;
         height: 20rem;

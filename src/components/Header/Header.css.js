@@ -7,7 +7,6 @@ export const Header = styled.header`
     align-items: center;
     justify-content: space-between;
     z-index: 3;
-
     @media screen and (min-width: 900px){
         width: 100%;
         background-color: #fff;
@@ -15,12 +14,15 @@ export const Header = styled.header`
     }
 `
 export const Logo = styled.div`
-    margin-left: 10px;
-    width: 60px;
-    height: 60px;
-    img {
-        width: 100%;
-        height: 100%;
+    margin: 1rem;
+    h2 {
+        font-family: 'Pacifico', cursive, Arial, Helvetica, sans-serif;
+        color: #FBAABB;
+        font-size: 3.2rem;
     }
-    
+    h3 {
+        color: #9ca3af;
+        margin-top: -1.5rem;
+        transform: scale(.9);
+    }
 `

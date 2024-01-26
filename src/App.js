@@ -23,7 +23,10 @@ function App() {
         <Header/>
         <Hero/>
         <MenuItem/>
-        <ProductGrid {...objCakes}/>
+        <div>
+        <ProductGrid {...objCakes}/>  
+        </div>
+     
     </main>
   );
 }

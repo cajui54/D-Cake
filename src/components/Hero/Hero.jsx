@@ -1,8 +1,9 @@
 import React from 'react';
 import * as Style from './Hero.css';
+import imgBrigadeiro from '../../assets/images/candys/briga-removebg-preview.png';
 import imgCake from '../../assets/images/cake02.png';
 import imgBgCandy01 from '../../assets/images/candys/withoutBgCandy.png';
-import imgDeise from '../../assets/images/deiseImg.png';
+import imgDeise from '../../assets/images/logoDeise.png';
 import { PiWhatsappLogoDuotone} from "react-icons/pi";
 import { TiSocialInstagram } from "react-icons/ti";
 
@@ -11,18 +12,22 @@ const Hero = () => {
     <Style.Hero id='moveTop'>
 
       <Style.Banner>
-          <img src={imgDeise} alt="logo miss deise bolos" />
+          <img src={imgDeise} alt="logo" />
+          <img src={imgBgCandy01} alt="logo" />
+          <img src={imgCake} alt="bolo decorado" />
+          <img src={imgBrigadeiro} alt="bolo decorado" />
       </Style.Banner>
 
       <Style.SectionArticle>
-        <Style.Titles>
-          <h2>D-Cakes</h2>
-          <h3>Confeitária Artesanal</h3>
-        </Style.Titles>
+   
         
         <article>
           <p>
-            Especializada na confecção de bolos decorados e doces ,
+            <strong className='distak'>
+            <span>DCakes</span>
+            <i> é uma confeitária artesanal</i>
+          </strong>
+             especializada na confecção de bolos decorados e doces ,
             cada doce é feito com muito amor e carinho,pensando sempre em nossos clientes.
           </p>
         </article>
