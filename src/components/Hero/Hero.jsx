@@ -20,7 +20,7 @@ const Hero = () => {
     {img: imgDeise, altInfo: 'Logo confeitária artesanal'},
   ]
   
-  setTimeout(() => {
+  /*setTimeout(() => {
       if(index < (slideHero.length - 1)) {
         setIndex(index+=1);
       } else {
@@ -28,7 +28,7 @@ const Hero = () => {
       }
       
     }, [5000])
-    console.log(index);
+    console.log(index);*/
   return (
     <Style.Hero id='moveTop'>
 
