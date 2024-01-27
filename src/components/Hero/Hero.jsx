@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import * as Style from './Hero.css';
 import imgBrigadeiro from '../../assets/images/candys/briga-removebg-preview.png';
 import imgCake from '../../assets/images/cake02.png';
@@ -6,33 +6,50 @@ import imgBgCandy01 from '../../assets/images/candys/withoutBgCandy.png';
 import imgDeise from '../../assets/images/logoDeise.png';
 import { PiWhatsappLogoDuotone} from "react-icons/pi";
 import { TiSocialInstagram } from "react-icons/ti";
+import { FaSquareFacebook } from "react-icons/fa6";
+
 
 const Hero = () => {
+  let [index, setIndex] = useState(0);
+  let refIndex = useRef(0);
+  
+  const slideHero = [
+    {img: imgCake, altInfo: 'bolo de aniverário'},
+    {img: imgBrigadeiro, altInfo: 'Brigadeiro'},
+    {img: imgBgCandy01, altInfo: 'Pão de Mél'},
+    {img: imgDeise, altInfo: 'Logo confeitária artesanal'},
+  ]
+  
+  setTimeout(() => {
+      if(index < (slideHero.length - 1)) {
+        setIndex(index+=1);
+      } else {
+        setIndex(0);
+      }
+      
+    }, [5000])
+    console.log(index);
   return (
     <Style.Hero id='moveTop'>
 
-      <Style.Banner>
-          <img src={imgDeise} alt="logo" />
-          <img src={imgBgCandy01} alt="logo" />
-          <img src={imgCake} alt="bolo decorado" />
-          <img src={imgBrigadeiro} alt="bolo decorado" />
-      </Style.Banner>
+      <Style.ContainerSlide>
+        <Style.SlideShow>
+          <img src={slideHero[index].img} alt={slideHero[index].altInfo} />
+          <div className='bg-color'></div>
+        </Style.SlideShow>
+      </Style.ContainerSlide>
 
-      <Style.SectionArticle>
-   
-        
-        <article>
+      <Style.Article>
           <p>
             <strong className='distak'>
             <span>DCakes</span>
-            <i> é uma confeitária artesanal</i>
+            <i> é uma confeitária artesanal </i>
           </strong>
-             especializada na confecção de bolos decorados e doces ,
+            especializada na confecção de bolos decorados e doces ,
             cada doce é feito com muito amor e carinho,pensando sempre em nossos clientes.
           </p>
-        </article>
 
-        <Style.SocialBar>
+          <Style.SocialBar>
           <a href="https://wa.me/5511973828299" target="_blank">
               <PiWhatsappLogoDuotone/>
               <p>What's</p>
@@ -42,8 +59,14 @@ const Hero = () => {
             <TiSocialInstagram/>
             <p>Intagram</p>
           </a>
+
+          <a href="https://www.facebook.com/deise.aquino.779" target="_blank">
+          <FaSquareFacebook />
+            <p>Facebook</p>
+          </a>
         </Style.SocialBar>
-      </Style.SectionArticle>
+
+        </Style.Article>
 
     </Style.Hero>
   )

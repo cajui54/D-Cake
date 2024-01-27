@@ -19,6 +19,7 @@ export const Menu = styled.nav`
         min-height: 7rem;
         position: relative;
         cursor: pointer;
+        
     }
     span {
         color: #FBAABB;
@@ -32,6 +33,7 @@ export const Menu = styled.nav`
         border-radius: 50%;
         margin-bottom: 1rem;
         z-index: 1;
+        transition: all ease-in .5s;
     }
     .clip {
         position: absolute;
