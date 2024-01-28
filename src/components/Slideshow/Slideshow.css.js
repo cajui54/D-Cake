@@ -27,6 +27,9 @@ export const Title = styled.div`
         font-size: 3rem;
         margin-top: -1.5rem;
     }
+    @media screen and (min-width: 700px) {
+        text-align: center;
+    }
 `
 export const Slide = styled.div`
     width: 90%;
@@ -59,15 +62,19 @@ export const Slide = styled.div`
     button:nth-child(3) {
         right: 10px;
     }
+    @media screen and (min-width: 700px) {
+     height: 100rem;
+     width: 50rem;
+    }
 `
 
 export const Menu = styled.div`
     position: relative;
     margin: 5rem auto;
     overflow-x: scroll;
-    overflow-y: auto;
+    overflow-y: hidden;;
     width: 95%;
-    height: 13rem;
+    height: 14rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -82,5 +89,10 @@ export const Menu = styled.div`
     }
     img:hover {
         transform: scale(1.2);
+    }
+    @media screen and (min-width: 700px) {
+        overflow-x: scroll;
+        width: 50rem;
+        height: 100rem;
     }
 `
