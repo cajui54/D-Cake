@@ -64,7 +64,7 @@ export const Navbar = styled.nav`
             
         }
         .active {
-            color: #9333ea;
+            color: #9ca3af;
         }
     }
     @media screen and (min-width: 800px) {
