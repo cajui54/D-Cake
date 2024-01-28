@@ -23,8 +23,9 @@ export const Title = styled.div`
       color: #64748b;
    }
    p {
-      margin-top: 1rem;
-      font-size: 1.5rem;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
       color: #94a3b8;
    }
 `

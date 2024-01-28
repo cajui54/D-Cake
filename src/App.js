@@ -4,17 +4,12 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import MenuItem from "./components/Menu/MenuItem";
-import AboutMe from "./pages/About/AboutMe";
-import CandySection from "./pages/CandySection/CandySection";
 import ProductGrid from "./pages/Products/ProductGrid";
-import { cakeDatas } from './assets/data/dataCakes';
-
+import { objCakes } from "./pages/Products/data/datasProducts";
+import Section from "./pages/Sections/Section";
 function App() {
-  const objCakes = {
-    titles:['Bolos', 'Decorados & Artesanal'],
-    paragraph: 'Trabalhamos com diversos sabores e Decorações a gosto do cliente!',
-    datas: cakeDatas,
-  }
+
+
 
   return (
     <main>
@@ -24,9 +19,9 @@ function App() {
         <Hero/>
         <MenuItem/>
         <div>
-        <ProductGrid {...objCakes}/>  
+          <ProductGrid {...objCakes}/>  
         </div>
-     
+        <Section/>
     </main>
   );
 }

@@ -17,7 +17,7 @@ import img14 from '../images/cakes/cake14.jpg';
 
 
 export const cakeDatas = [
-    {id: 1, image: img03_fla, title: 'Bolo Decorado', subTitle: 'Chocolate e Morango', paragraph: 'Cada doce é feito com muito amor e carinho', pathLink: 'https://wa.me/5511973828299'},
+    {id: 1, image: img03_fla, title: 'Bolo Decorado', subTitle: 'Chocolate e Morango', paragraph: 'Cada doce é feito com muito amor e carinh', pathLink: 'https://wa.me/5511973828299'},
     {id: 12, image: img11, title: 'Bolo Decorado', subTitle: 'Chocolate e Morango', paragraph: 'Cada doce é feito com muito amor e carinho', pathLink: 'https://wa.me/5511973828299'},
     {id: 11, image: img10, title: 'Bolo Decorado', subTitle: 'Chocolate e Morango', paragraph: 'Cada doce é feito com muito amor e carinho', pathLink: 'https://wa.me/5511973828299'},
     {id: 2, image: img01, title: 'Bolo Decorado', subTitle: 'Chocolate e Morango', paragraph: 'Cada doce é feito com muito amor e carinho', pathLink: 'https://wa.me/5511973828299'},

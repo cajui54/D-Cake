@@ -5,7 +5,7 @@ import Item from '../../components/Item/Item';
 
 
 const ProductGrid = ({titles, paragraph, datas}) => {
-  console.log(datas);
+  
   return (
     <Style.ProductGrid id='moveCake'>
       <Style.Title>

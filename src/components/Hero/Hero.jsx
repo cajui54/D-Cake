@@ -11,7 +11,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 
 const Hero = () => {
   let [index, setIndex] = useState(0);
-  let refIndex = useRef(0);
+  
   
   const slideHero = [
     {img: imgCake, altInfo: 'bolo de aniverário'},
@@ -20,15 +20,15 @@ const Hero = () => {
     {img: imgDeise, altInfo: 'Logo confeitária artesanal'},
   ]
   
-  /*setTimeout(() => {
+  setTimeout(() => {
       if(index < (slideHero.length - 1)) {
         setIndex(index+=1);
       } else {
         setIndex(0);
       }
-      
+      console.log('Hero');
     }, [5000])
-    console.log(index);*/
+    
   return (
     <Style.Hero id='moveTop'>
 

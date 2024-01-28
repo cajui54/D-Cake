@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Hero = styled.section`
     min-height: 30rem;
     width: 100%;
-    overflow: hidden;
+    
 
     @media screen and (min-width: 700px) {
         display: flex;
@@ -70,6 +70,18 @@ export const SlideShow = styled.div`
             top: 13rem;
         }
     }
+    @media screen and (min-width: 1000px) {  
+        .bg-color {
+            left: -15rem;
+            top: 0rem;
+            height: 40rem;
+            width: 45rem;
+        }
+        img {
+            top: 3rem;
+            width: 45rem;
+        }
+    }   
 `
 export const Article = styled.article`
     width: 90%;
