@@ -65,6 +65,7 @@ export const Menu = styled.div`
     position: relative;
     margin: 5rem auto;
     overflow-x: scroll;
+    overflow-y: auto;
     width: 95%;
     height: 13rem;
     align-items: center;
