@@ -4,7 +4,7 @@ import GridItem from './Grid/GridItem';
 
 const Section = () => {
   return (
-    <Style.MainSection>
+    <Style.MainSection id='ancoraBrigadeiro'>
         <GridItem/>
     </Style.MainSection>
   )

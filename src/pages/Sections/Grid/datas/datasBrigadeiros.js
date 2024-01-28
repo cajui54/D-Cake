@@ -6,10 +6,10 @@ import img05 from '../../../../assets/images/brigadeiros_without/06_brigadeiro-r
 import img06 from '../../../../assets/images/candys/briga-removebg-preview.png';
 
 export const datasBrigadeiros = [
+    {image: img06, alt: 'Brigadeiro Gourmet', title: 'Brigadeiro'},
     {image: img01, alt: 'Brigadeiro Gourmet', title: 'Brigadeiro'},
     {image: img02, alt: 'Brigadeiro Gourmet', title: 'Brigadeiro'},
     {image: img03, alt: 'Brigadeiro Gourmet', title: 'Brigadeiro'},
     {image: img04, alt: 'Brigadeiro Gourmet', title: 'Brigadeiro'},
     {image: img05, alt: 'Brigadeiro Gourmet', title: 'Brigadeiro'},
-    {image: img06, alt: 'Brigadeiro Gourmet', title: 'Brigadeiro'},
 ]

@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import MenuItem from "./components/Menu/MenuItem";
 import ProductGrid from "./pages/Products/ProductGrid";
-import { objCakes } from "./pages/Products/data/datasProducts";
+import { objCakes, objCandy } from "./pages/Products/data/datasProducts";
 import Section from "./pages/Sections/Section";
 function App() {
 
@@ -22,6 +22,9 @@ function App() {
           <ProductGrid {...objCakes}/>  
         </div>
         <Section/>
+        <div>
+          <ProductGrid {...objCandy}/>  
+        </div>
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import * as Style from './GridItem.css';
 import { datasBrigadeiros } from './datas/datasBrigadeiros';
+import imgBrigadeiro from '../../../assets/images/candys/candy08.jpg';
 
 const GridItem = () => {
   return (
@@ -19,9 +20,21 @@ const GridItem = () => {
                     </Style.Item>
                 ))
             )}
-         
         </Style.ItemContainer>
-     
+
+        <Style.Side>
+          <img src={imgBrigadeiro} alt="Brigadeiro Artesanal Gourmet"/>
+          <article>
+                <p>
+                    <span>Brigadeiro Artesanal Gourmet</span>, temos diversos tipos e sabores, para mais informações
+                    click no link abaixo:
+                </p>
+                <a href="https://wa.me/5511973828299" target="_blank">
+                    + Detalhes
+                </a>
+          </article>
+        
+        </Style.Side>
     </Style.GridMain>
   )
 }

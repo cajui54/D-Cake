@@ -4,10 +4,10 @@ import Item from '../../components/Item/Item';
 
 
 
-const ProductGrid = ({titles, paragraph, datas}) => {
+const ProductGrid = ({titles, paragraph, id, datas}) => {
   
   return (
-    <Style.ProductGrid id='moveCake'>
+    <Style.ProductGrid id={id}>
       <Style.Title>
         <h2>{titles[0]}</h2>
         <h3>{titles[1]}</h3>

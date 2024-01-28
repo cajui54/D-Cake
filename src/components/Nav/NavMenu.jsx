@@ -12,19 +12,9 @@ const NavMenu = () => {
 
   return (
     <Style.Nav>
-      <Link activeClass='activeBar' smooth={true} duration={500} to='moveTop' spy={true} onSetActive={handleSetActive}>
+      <Link activeClass='activeBar' smooth={true} duration={500} to='moveTop' offset={-55} spy={true} onSetActive={handleSetActive}>
         <BiSolidUpArrowSquare />
         <span>Topo</span>
-      </Link>
-
-      <Link activeClass='activeBar' smooth={true} duration={500} to='moveCake' offset={50} spy={true} onSetActive={handleSetActive}>
-        <GiCupcake/>
-        <span>Bolos</span>
-      </Link>
-      
-      <Link activeClass='activeBar' smooth={true} duration={500} to='moveCandy' spy={true} onSetActive={handleSetActive}>
-        <LuIceCream2/>
-        <span>Doces</span>
       </Link>
       
     </Style.Nav>

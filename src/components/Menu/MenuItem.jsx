@@ -10,13 +10,13 @@ const MenuItem = () => {
   const handleSetActive = (to) => to;
   return (
     <Style.Menu>
-      <Link activeClass='active' onSetActive={handleSetActive} to='moveCake' spy={true} smooth={true} offset={-150} duration={500}>
+      <Link activeClass='active' onSetActive={handleSetActive} to='moveCake' spy={true} smooth={true} offset={-10} duration={500}>
         <div className='clip'></div>
         <img src={imgCake} alt="Bolo Decorado Artesanal"/>
         <span>Bolos</span>
       </Link>
 
-      <Link>
+      <Link activeClass='active' onSetActive={handleSetActive} to='ancoraBrigadeiro' spy={true} smooth={true} offset={-20} duration={500}>
         <div className='clip'></div>
         <img src={imgBrigadeiro} alt="Brigadeiro artesanal"/>
          <span>Brigadeiro</span>
@@ -27,8 +27,8 @@ const MenuItem = () => {
         <img src={imgPaoDeMel} alt="Pão de Mel artesanal"/>
         <span>Pão de Mel</span>
       </Link>
-
-      <Link>
+      
+      <Link activeClass='active' onSetActive={handleSetActive} to='moveCandy' spy={true} smooth={true} offset={10} duration={500}>
         <div className='clip'></div>
         <img src={imgCandy} alt="Doce artesanal"/>
         <span>Doces</span>
