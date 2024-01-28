@@ -1,38 +1,47 @@
 import styled from "styled-components";
 
 export const Footer = styled.footer`
-    margin-top: 100px;
-    min-height: 250px;
     background-color: #FBAABB;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    min-height: 25rem;
+    border-radius: 10px;
+    margin-bottom: 0;
+`
+export const ContainerLogo = styled.div`
+    width: 80%;
+    margin: 2rem auto;
 
-
-    .title {
+    img {
+        display: block;
+        margin: 1rem auto;
+        width: 50%;
+    }
+    h2 {
         text-align: center;
+        color: #fff;
     }
+    @media screen and (min-width: 700px){
+        img {
+            width: 10rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
+`
 
-    .title h2:first-child{
-        color: #fff;
-        font-family: 'Pacifico', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
-        font-size: 3rem;
+export const Address = styled.address`
+    width: 80%;
+    margin: 1rem auto;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: #ffd700;
+        font-weight: bold;
     }
-    .title h2:last-child{
-        color: #334155;
-        margin-top: -10px;
-        font-size: 1.2rem;
-    }
-    .icons-social {
-        margin-top: 10px;
-    }
-    .icons-social a{
-        color: #fff;
-        font-size: 3rem;
-        margin-right: 10px;
-    }
-    @media screen and (min-width: 900px){
-        min-height: 100px;
+    a {
+        color: #ffd700;
+        text-decoration: none;
     }
 `

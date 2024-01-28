@@ -32,7 +32,7 @@ const Navbar = () => {
         Doces
       </Link>
 
-      <Link onClick={handleClickCloseMenu} activeClass='active' onSetActive={handleSetActive} to='moveTop' spy={true} smooth={true} duration={500}>
+      <Link onClick={handleClickCloseMenu} activeClass='active' onSetActive={handleSetActive} to='ancoraContactMe' spy={true} smooth={true} duration={500}>
       <MdOutlineContactPhone />
         Contatos
       </Link>

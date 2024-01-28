@@ -7,6 +7,7 @@ import MenuItem from "./components/Menu/MenuItem";
 import ProductGrid from "./pages/Products/ProductGrid";
 import { objCakes, objCandy } from "./pages/Products/data/datasProducts";
 import Section from "./pages/Sections/Section";
+import AboutMe from "./pages/AboutMe/AboutMe";
 function App() {
 
 
@@ -25,6 +26,8 @@ function App() {
         <div>
           <ProductGrid {...objCandy}/>  
         </div>
+        <AboutMe/>
+        <Footer/>
     </main>
   );
 }
