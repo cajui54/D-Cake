@@ -5,6 +5,9 @@ export const Footer = styled.footer`
     min-height: 25rem;
     border-radius: 10px;
     margin-bottom: 0;
+    @media screen and (min-width: 700px) {
+        height: 8rem;
+    }
 `
 export const ContainerLogo = styled.div`
     width: 80%;
@@ -19,7 +22,7 @@ export const ContainerLogo = styled.div`
         text-align: center;
         color: #fff;
     }
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 700px) {
         img {
             width: 10rem;
         }
@@ -37,11 +40,14 @@ export const Address = styled.address`
         justify-content: space-around;
         padding: 1rem;
         font-size: 1.5rem;
-        color: #ffd700;
+        color: #fff;
         font-weight: bold;
     }
     a {
-        color: #ffd700;
+        color: #fff;
         text-decoration: none;
+    }
+    @media screen and (min-width: 700px) {
+        width: 30%;
     }
 `
