@@ -33,6 +33,7 @@ export const Title = styled.div`
 `
 export const Slide = styled.div`
     width: 90%;
+    height: 50rem;
     margin: 0 auto;
     overflow: hidden;
     border: 10px solid #fff;
@@ -41,7 +42,7 @@ export const Slide = styled.div`
     img {
         display: block;
         width: 100%;
-        height: 40rem;
+        height: 100%;
         transition: all 1s ease-in-out;
     }
     button {
@@ -72,9 +73,9 @@ export const Menu = styled.div`
     position: relative;
     margin: 5rem auto;
     overflow-x: scroll;
-    overflow-y: hidden;;
+    overflow-y: hidden;
     width: 95%;
-    height: 14rem;
+    height: 24rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
