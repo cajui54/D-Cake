@@ -9,7 +9,7 @@ const Header = () => {
     <Style.Header>
 
         <Style.Logo>
-          <h2>DCakes</h2>
+          <h2>DeCakes</h2>
           <h3>Confeitária Artesanal</h3>
         </Style.Logo>
 

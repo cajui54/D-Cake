@@ -12,7 +12,7 @@ const AboutMe = () => {
       <Style.Article>
         <article>
             <p>
-                <span>DCake</span>
+                <span>DeCake</span>
                 <i> é uma confeitária artesanal especializada na confecção de bolos e doces
                     decorados para festas de aniversários!
                 </i>

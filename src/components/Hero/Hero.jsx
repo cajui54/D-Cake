@@ -28,7 +28,7 @@ const Hero = () => {
       <Style.Article>
           <p>
             <strong className='distak'>
-              <span>DCakes</span>
+              <span>DeCakes</span>
             </strong>
             <p>cada doce é feito com muito amor e carinho,pensando sempre em nossos clientes.</p>
           </p>
